@@ -1,5 +1,5 @@
 import { GitBranch, ExternalLink, ArrowRight } from 'lucide-react'
-
+import Image1 from "/frontendimage1.png"
 const Projects = () => {
   const projects = [
     {
@@ -19,12 +19,12 @@ const Projects = () => {
       demo: 'https://example.com',
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A weather dashboard built using API integration with clean UI.',
-      tech: ['API', 'JavaScript', 'CSS'],
+      title: 'Food-delivery',
+      description: 'A collection of different food integration with clean UI.',
+      tech: ['React', 'JavaScript', 'vite' ,'Tailwidcss'],
       preview: 'https://via.placeholder.com/400x250/090d1f/8b5cf6?text=Weather+Dashboard',
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      github: 'https://github.com/abaynewfisha-bot',
+      demo: 'https://sami-food-d.vercel.app/',
     },
   ]
 
@@ -48,7 +48,7 @@ const Projects = () => {
             {/* Mockup Laptop Display Header */}
             <div className="bg-[#0f172a] p-2 border-b border-slate-800 relative">
               <img
-                src={proj.preview}
+                src={Image1}
                 alt={proj.title}
                 className="w-full h-36 object-cover rounded-lg border border-slate-800"
               />
