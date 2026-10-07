@@ -16,15 +16,15 @@ function App() {
 
       <Navbar />
       
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-16">
+      <main className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-16">
         <Home />
         
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-4">
           <About />
           <Skills/>
-          <Services />
+         
         </div>
-
+        <Services />
         <Projects />
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -62,7 +62,7 @@ function App() {
             <h4 className="text-white font-semibold text-sm mb-2">Follow Me</h4>
             <div className="flex md:justify-end gap-4 text-slate-400 mb-4">
               <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-purple-400"><GitBranch size={16} />GitHub</a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-purple-400"><BriefcaseBusiness size={16} />LinkedIn</a>
+              <a href="https://https://github.com/abaynewfisha-bot/.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 p-2 rounded-lg bg-slate-900 border border-slate-800 hover:text-purple-400"><BriefcaseBusiness size={16} />LinkedIn</a>
             </div>
             <p className="text-xs text-slate-500">© 2025 Abaynew Fisha. All Rights Reserved.</p>
           </div>

@@ -3,7 +3,7 @@ import { ArrowRight, Mail, Target, Atom, Leaf, Smartphone } from 'lucide-react'
 import ProfileImage from "../../assets/Images/sami.png"
 const Home = () => {
   return (
-    <section id="home" className="min-h-screen bg-[#070d18] text-white flex items-center pt-24 pb-16 px-6 sm:px-12 overflow-hidden relative">
+    <section id="home" className="min-h-screen bg-[#070d18] text-white flex items-center pt-24 pb-16 px-13 sm:px-12 overflow-hidden relative gap-10">
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-8 items-center">
 
         {/* 2. Content Column */}
@@ -13,12 +13,12 @@ const Home = () => {
               • Fullstack Developer
             </span>
           </div>
-
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+         
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
             Hi, I'm Abaynew<span className="inline-block animate-bounce">👋</span>
           </h1>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold leading-tight">
             I build modern, <br />
             scalable <span className="text-[#10b981]">web applications.</span>
           </h2>
@@ -28,7 +28,7 @@ const Home = () => {
           </p>
 
           {/* Connected CTA Button Links */}
-          <div className="flex flex-wrap gap-4 pt-3">
+          <div className="flex flex-wrap gap-6 pt-3">
             <a
               href="#projects"
               className="flex items-center gap-2 bg-[#10b981] hover:bg-[#059669] text-[#070d18] font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-[#10b981]/20 group"
@@ -47,33 +47,33 @@ const Home = () => {
         </div>
 
         {/* 3. Photo Box & Floating Tech Badges with Links */}
-        <div className="lg:col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
+        <div className=" lg:w-[100%] h-[90%] col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
           
           <div className=" rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-[#0b1325] z-5 w-full max-w-md">
             <img
               src={ProfileImage}
-              alt="Yibeltal Developer"
-              className="w-full h-200 object-cover"
+              alt="Abaynew Developer"
+              className="w-full h-[50%]  justify-end"
               onError={(e) => {
                 e.target.onerror = null
-                e.target.src = 'https://via.placeholder.com/500x380/0b1325/10b981?text=Yibeltal'
+                e.target.src = 'https://via.placeholder.com/500x380/0b1325/10b981?text=Abaynew'
               }}
             />
           </div>
 
           {/* Smartphone Link */}
           <a href="#responsive" className="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#0c162c] border border-slate-800/80 p-2.5 rounded-xl shadow-xl z-20 hover:border-cyan-400 transition-all">
-            <Smartphone className="text-cyan-400" size={18} />
+            <Smartphone className="text-cyan-400" size={22} />
           </a>
 
           {/* React / Atom Link */}
           <a href="#skills" className="absolute -top-6 left-12 bg-[#0c162c] border border-slate-800/80 p-3 rounded-2xl shadow-xl z-20 hover:scale-110 transition-transform">
-            <Atom className="text-cyan-400" size={24} />
+            <Atom className="text-cyan-400" size={20} />
           </a>
 
           {/* Target Icon Link */}
           <a href="#about" className="absolute top-1/2 -left-6 -translate-y-1/2 bg-[#0c162c] border-2 border-[#10b981] p-2.5 rounded-2xl shadow-[0_0_15px_rgba(16,185,129,0.4)] z-20 hover:scale-110 transition-transform">
-            <Target className="text-red-500" size={22} />
+            <Target className="text-red-500" size={20} />
           </a>
 
           {/* Leaf Link */}
@@ -102,7 +102,6 @@ const Home = () => {
           </a>
 
         </div>
-
       </div>
     </section>
   )
