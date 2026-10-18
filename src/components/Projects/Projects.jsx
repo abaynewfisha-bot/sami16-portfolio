@@ -1,12 +1,18 @@
+
 import { GitBranch, ExternalLink, ArrowRight } from 'lucide-react'
-import Image1 from "/frontendimage1.png"
+
+// Import your different project images here
+// import Image1 from "/frontendimage1.png"
+import Image2 from "/image.png" // Make sure this image exists in your folder
+import Image1 from "/frontendimage1.png" // Make sure this image exists in your folder
+
 const Projects = () => {
   const projects = [
     {
       title: 'E-Learning Platform',
       description: 'A full-stack e-learning platform built with React, Node.js and MongoDB.',
       tech: ['React', 'Node.js', 'MongoDB'],
-      preview: 'https://via.placeholder.com/400x250/090d1f/8b5cf6?text=E-Learning+Platform',
+      image: Image1, // Unique image for project 1
       github: 'https://github.com',
       demo: 'https://example.com',
     },
@@ -14,15 +20,15 @@ const Projects = () => {
       title: 'Task Management App',
       description: 'A collaborative task management app with real-time updates and notifications.',
       tech: ['React', 'Express', 'Socket.io'],
-      preview: 'https://via.placeholder.com/400x250/090d1f/2563eb?text=Task+Management+App',
+      image: Image2, // Unique image for project 2
       github: 'https://github.com',
       demo: 'https://example.com',
     },
     {
       title: 'Food-delivery',
       description: 'A collection of different food integration with clean UI.',
-      tech: ['React', 'JavaScript', 'vite' ,'Tailwidcss'],
-      preview: 'https://via.placeholder.com/400x250/090d1f/8b5cf6?text=Weather+Dashboard',
+      tech: ['React', 'JavaScript', 'Vite', 'TailwindCSS'],
+      image: Image1, // Unique image for project 3
       github: 'https://github.com/abaynewfisha-bot',
       demo: 'https://sami-food-d.vercel.app/',
     },
@@ -45,10 +51,10 @@ const Projects = () => {
             key={idx}
             className="bg-[#080d1e] border border-slate-800 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all flex flex-col justify-between"
           >
-            {/* Mockup Laptop Display Header */}
+            {/* Mockup Laptop Display Header with Unique Image */}
             <div className="bg-[#0f172a] p-2 border-b border-slate-800 relative">
               <img
-                src={Image1}
+                src={proj.image}
                 alt={proj.title}
                 className="w-full h-36 object-cover rounded-lg border border-slate-800"
               />
