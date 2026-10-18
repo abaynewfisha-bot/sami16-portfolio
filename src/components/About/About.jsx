@@ -10,7 +10,7 @@ const About = () => {
       </h2>
 
       <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-        I'm a passionate Full Stack Developer with a strong foundation in building scalable web applications.<br></br> I love turning complex problems into simple, beautiful, and intuitive solutions.
+        I'm a passionate Full Stack Developer with a strong foundation in building scalable web applications.<br/> I love turning complex problems into simple, beautiful, and intuitive solutions.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-8 items-center">

@@ -19,15 +19,16 @@ function App() {
       <main className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-16">
         <Home />
         <About />
-          <Skills/>
-          <Services />
-          <Projects />
+        <Skills/>
+        <Services />
+        <Projects />
+        <Testimonials />
+        <Contact />
         <div className="grid lg:grid-cols-2 gap-4">
           
         </div>
         <div className="grid lg:grid-cols-2 gap-8">
-          <Testimonials />
-          <Contact />
+          
         </div>
       </main>
 
