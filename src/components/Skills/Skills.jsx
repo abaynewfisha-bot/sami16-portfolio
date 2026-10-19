@@ -47,7 +47,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-8">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">
           Technical <span className="text-purple-400">Skills</span>
         </h2>
 
@@ -56,14 +56,14 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-[#0b1021]/80 backdrop-blur-md border border-slate-800/80 hover:border-purple-500/50 rounded-2xl p-6 shadow-xl transition-all duration-300"
+              className="bg-white/80 dark:bg-[#0b1021]/80 backdrop-blur-md border border-slate-200 dark:border-slate-800/80 hover:border-purple-500/50 rounded-2xl p-6 shadow-xl transition-all duration-300"
             >
               {/* Category Card Header */}
-              <div className="flex items-center gap-3 mb-6 pb-3 border-b border-slate-800/80">
-                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800">
+              <div className="flex items-center gap-3 mb-6 pb-3 border-b border-slate-200 dark:border-slate-800/80">
+                <div className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white">{category.title}</h3>
               </div>
 
               {/* Progress Bars */}
@@ -71,12 +71,12 @@ const Skills = () => {
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="space-y-1.5">
                     <div className="flex justify-between text-xs font-semibold">
-                      <span className="text-slate-200">{skill.name}</span>
-                      <span className="text-slate-400">{skill.percent}%</span>
+                      <span className="text-slate-700 dark:text-slate-200">{skill.name}</span>
+                      <span className="text-slate-600 dark:text-slate-400">{skill.percent}%</span>
                     </div>
 
                     {/* Blue-to-Purple Gradient Bar */}
-                    <div className="w-full h-2 bg-slate-800/90 rounded-full overflow-hidden">
+                    <div className="w-full h-2 bg-slate-200 dark:bg-slate-800/90 rounded-full overflow-hidden">
                       <div
                         className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 shadow-[0_0_12px_rgba(139,92,246,0.5)]"
                         style={{ width: `${skill.percent}%` }}

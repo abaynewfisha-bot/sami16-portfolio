@@ -20,20 +20,20 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="bg-[#0b1021]/80 border border-slate-800/80 rounded-2xl p-6 shadow-xl">
-      <h2 className="text-2xl font-bold text-white mb-6">Services</h2>
+    <section id="services" className="bg-white/80 dark:bg-[#0b1021]/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 shadow-xl transition-colors duration-300">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Services</h2>
 
       <div className="grid sm:grid-cols-3 gap-4">
         {services.map((item, idx) => (
           <div
             key={idx}
-            className="bg-[#0d142d] border border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-purple-500/50 transition-colors"
+            className="bg-slate-50 dark:bg-[#0d142d] border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex flex-col justify-between hover:border-purple-500/50 transition-colors"
           >
-            <div className="p-2.5 bg-slate-900/80 w-fit rounded-lg border border-slate-800 mb-3">
+            <div className="p-2.5 bg-slate-100 dark:bg-slate-900/80 w-fit rounded-lg border border-slate-200 dark:border-slate-800 mb-3">
               {item.icon}
             </div>
-            <h3 className="text-sm font-semibold text-white mb-2">{item.title}</h3>
-            <p className="text-slate-400 text-xs leading-relaxed">{item.description}</p>
+            <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h3>
+            <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">{item.description}</p>
           </div>
         ))}
       </div>

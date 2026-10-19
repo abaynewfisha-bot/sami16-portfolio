@@ -45,12 +45,12 @@ const Testimonials = () => {
   const current = testimonials[currentIndex]
 
   return (
-    <section id="testimonials" className="bg-[#0b1021]/80 border border-slate-800/80 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-      <h2 className="text-2xl font-bold text-white mb-4">Testimonials</h2>
+    <section id="testimonials" className="bg-white/80 dark:bg-[#0b1021]/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 shadow-xl flex flex-col justify-between transition-colors duration-300">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Testimonials</h2>
 
-      <div className="bg-[#090e24] border border-slate-800 rounded-xl p-6 relative my-auto transition-all duration-300">
+      <div className="bg-slate-50 dark:bg-[#090e24] border border-slate-200 dark:border-slate-800 rounded-xl p-6 relative my-auto transition-all duration-300">
         <Quote className="text-purple-500/30 mb-2" size={32} />
-        <p className="text-slate-300 text-xs sm:text-sm italic leading-relaxed mb-6 min-h-[50px]">
+        <p className="text-slate-700 dark:text-slate-300 text-xs sm:text-sm italic leading-relaxed mb-6 min-h-[50px]">
           "{current.quote}"
         </p>
 
@@ -61,7 +61,7 @@ const Testimonials = () => {
             className="w-10 h-10 rounded-full object-cover border border-purple-500"
           />
           <div>
-            <h4 className="text-white font-semibold text-sm">{current.name}</h4>
+            <h4 className="text-slate-900 dark:text-white font-semibold text-sm">{current.name}</h4>
             <p className="text-slate-500 text-xs">{current.role}</p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const Testimonials = () => {
       <div className="flex justify-between items-center pt-4">
         <button 
           onClick={handlePrev}
-          className="p-1.5 rounded-lg border border-slate-800 text-slate-400 hover:text-white hover:border-purple-500 transition-all"
+          className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-purple-500 transition-all"
         >
           <ChevronLeft size={16} />
         </button>
@@ -82,7 +82,7 @@ const Testimonials = () => {
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               className={`w-2 h-2 rounded-full cursor-pointer transition-all ${
-                currentIndex === idx ? 'bg-purple-500 w-4' : 'bg-slate-700'
+                currentIndex === idx ? 'bg-purple-500 w-4' : 'bg-slate-300 dark:bg-slate-700'
               }`}
             ></span>
           ))}
@@ -90,7 +90,7 @@ const Testimonials = () => {
 
         <button 
           onClick={handleNext}
-          className="p-1.5 rounded-lg border border-slate-800 text-slate-400 hover:text-white hover:border-purple-500 transition-all"
+          className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-purple-500 transition-all"
         >
           <ChevronRight size={16} />
         </button>

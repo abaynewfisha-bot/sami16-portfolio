@@ -35,9 +35,9 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="bg-[#0b1021]/80 border border-slate-800/80 rounded-2xl p-6 shadow-xl">
+    <section id="projects" className="bg-white/80 dark:bg-[#0b1021]/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 shadow-xl transition-colors duration-300">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-white">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
           Featured <span className="text-purple-400">Projects</span>
         </h2>
         <a href="#projects" className="text-xs text-purple-400 hover:underline flex items-center gap-1">
@@ -49,10 +49,10 @@ const Projects = () => {
         {projects.map((proj, idx) => (
           <div
             key={idx}
-            className="bg-[#080d1e] border border-slate-800 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all flex flex-col justify-between"
+            className="bg-white dark:bg-[#080d1e] border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all flex flex-col justify-between"
           >
             {/* Mockup Laptop Display Header with Unique Image */}
-            <div className="bg-[#0f172a] p-2 border-b border-slate-800 relative">
+            <div className="bg-slate-100 dark:bg-[#0f172a] p-2 border-b border-slate-200 dark:border-slate-800 relative">
               <img
                 src={proj.image}
                 alt={proj.title}
@@ -62,8 +62,8 @@ const Projects = () => {
 
             <div className="p-4 flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="text-base font-semibold text-white mb-1">{proj.title}</h3>
-                <p className="text-slate-400 text-xs leading-relaxed mb-4">{proj.description}</p>
+                <h3 className="text-base font-semibold text-slate-900 dark:text-white mb-1">{proj.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-4">{proj.description}</p>
               </div>
 
               <div>
@@ -80,8 +80,8 @@ const Projects = () => {
                 </div>
 
                 {/* Card Action Links */}
-                <div className="flex justify-between items-center border-t border-slate-800/80 pt-3 text-xs text-slate-400">
-                  <a href={proj.github} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-white">
+                <div className="flex justify-between items-center border-t border-slate-200 dark:border-slate-800/80 pt-3 text-xs text-slate-600 dark:text-slate-400">
+                  <a href={proj.github} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-slate-900 dark:hover:text-white">
                     <GitBranch size={14} /> GitHub
                   </a>
                   <a href={proj.demo} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-purple-400 hover:text-purple-300 font-medium">

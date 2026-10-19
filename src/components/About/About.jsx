@@ -4,40 +4,40 @@ import Image from "../../assets/Images/photo.jpg"
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#0b1021]/80 border border-slate-800/80 rounded-2xl p-6 shadow-xl">
-      <h2 className="text-2xl font-bold text-white mb-4">
+    <section id="about" className="bg-white/80 dark:bg-[#0b1021]/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl p-6 shadow-xl transition-colors duration-300">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
         About <span className="text-purple-400">Me</span>
       </h2>
 
-      <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+      <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
         I'm a passionate Full Stack Developer with a strong foundation in building scalable web applications.<br/> I love turning complex problems into simple, beautiful, and intuitive solutions.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-8 items-center">
         {/* Details List */}
         <div className="space-y-3 text-xs sm:text-sm">
-          <div className="flex items-center gap-3 text-slate-300">
+          <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
             <User className="text-purple-400" size={16} />
             <span className="text-slate-500 min-w-[70px]">Name:</span>
-            <span className="font-medium text-white">Abaynew Fisha</span>
+            <span className="font-medium text-slate-900 dark:text-white">Abaynew Fisha</span>
           </div>
 
-          <div className="flex items-center gap-3 text-slate-300">
+          <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
             <Mail className="text-purple-400" size={16} />
             <span className="text-slate-500 min-w-[70px]">Email:</span>
-            <span className="font-medium text-white">abaynewfisha@gmail.com</span>
+            <span className="font-medium text-slate-900 dark:text-white">abaynewfisha@gmail.com</span>
           </div>
 
-          <div className="flex items-center gap-3 text-slate-300">
+          <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
             <MapPin className="text-purple-400" size={16} />
             <span className="text-slate-500 min-w-[70px]">Location:</span>
-            <span className="font-medium text-white">Addis Ababa, Ethiopia</span>
+            <span className="font-medium text-slate-900 dark:text-white">Addis Ababa, Ethiopia</span>
           </div>
 
-          <div className="flex items-center gap-3 text-slate-300">
+          <div className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
             <Briefcase className="text-purple-400" size={16} />
             <span className="text-slate-500 min-w-[70px]">Experience:</span>
-            <span className="font-medium text-white">2+ Years</span>
+            <span className="font-medium text-slate-900 dark:text-white">2+ Years</span>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const About = () => {
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 rounded-2xl blur-lg opacity-40 group-hover:opacity-80 transition duration-500"></div>
 
           {/* 3D Tilted Card Frame */}
-          <div className="relative w-full max-w-[280px] h-60 bg-[#080d1e] border border-purple-500/30 rounded-2xl p-2 shadow-2xl transition-all duration-500 [transform-style:preserve-3d] [transform:rotateY(-12deg)_rotateX(6deg)] group-hover:[transform:rotateY(0deg)_rotateX(0deg)_scale(1.03)] flex items-center justify-center">
+          <div className="relative w-full max-w-[280px] h-60 bg-white dark:bg-[#080d1e] border border-purple-500/30 rounded-2xl p-2 shadow-2xl transition-all duration-500 [transform-style:preserve-3d] [transform:rotateY(-12deg)_rotateX(6deg)] group-hover:[transform:rotateY(0deg)_rotateX(0deg)_scale(1.03)] flex items-center justify-center">
             
             {/* Image with Floating 3D Pop Effect */}
             <img
@@ -57,7 +57,7 @@ const About = () => {
               className="w-full h-full object-cover rounded-xl shadow-inner transition-transform duration-500 [transform:translateZ(20px)] group-hover:[transform:translateZ(35px)]"
               onError={(e) => {
                 e.target.onerror = null;
-                e.target.src = 'https://via.placeholder.com/300x200/0b1021/8b5cf6?text=Abaynew';
+                e.target.src = 'https://via.placeholder.com/200x200/0b1021/8b5cf6?text=Abaynew';
               }}
             />
 
