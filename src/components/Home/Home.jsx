@@ -1,110 +1,189 @@
+import {
+  ArrowDown,
+  GitBranch,
+  User,
+  Mail,
+  Atom,
+  Code2,
+  Braces,
+  Leaf,
+  Layers,
+  Download,
+  ArrowUpRight,
+} from "lucide-react";
+import { PROFILE } from "../../utils/constants";
+import profileImage from "../../assets/Images/sami.png";
 
-import { ArrowRight, Mail, Target, Atom, Leaf, Smartphone } from 'lucide-react'
-import ProfileImage from "../../assets/Images/sami.png"
-const Home = () => {
+const technologies = [
+  { name: "React", Icon: Atom, position: "react" },
+  { name: "Node.js", Icon: Braces, position: "node" },
+  { name: "Tailwind CSS", Icon: Layers, position: "tailwind" },
+  { name: "TypeScript", Icon: Code2, position: "typescript" },
+  { name: "MongoDB", Icon: Leaf, position: "database" },
+];
+
+const stats = [
+  { value: "10+", label: "Technologies" },
+  { value: "12+", label: "Projects" },
+  { value: "80%", label: "Satisfaction" },
+];
+
+export default function Home() {
   return (
-    <section id="home" className="min-h-screen bg-slate-50 dark:bg-[#070d18] text-slate-900 dark:text-white flex items-center pt-24 pb-16 px-13 sm:px-12 overflow-hidden relative gap-10 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-8 items-center">
+    <main className="relative min-h-[calc(100vh-5rem)] overflow-hidden  text-white">
+      {/* Background glow */}
+      <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-cyan-500/[0.06] blur-[120px]" />
+      <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-emerald-400/[0.05] blur-[120px]" />
 
-        {/* 2. Content Column */}
-        <div className="lg:col-span-6 space-y-5 z-10">
-          <div className="inline-block">
-            <span className="bg-emerald-50 dark:bg-[#0c221e] text-[#10b981] border border-emerald-200 dark:border-[#10b981]/30 text-xs font-semibold px-3 py-1.5 rounded-full tracking-wide">
-              • Fullstack Developer
-            </span>
+      <section  id ="home" className="relative mx-auto grid min-h-[calc(100vh-5rem)] max-w-[1600px] items-center gap-12 px-6 py-16 sm:px-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8 lg:px-16 lg:py-12">
+        {/* Left: Introduction */}
+        <div className="relative z-10">
+          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#52f5d2]/20 bg-[#52f5d2]/[0.06] px-4 py-2 text-sm text-[#52f5d2] lg:hidden">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-[#52f5d2]" />
+            Available for opportunities
           </div>
-         
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
-            Hi, I'm Abaynew<span className="inline-block animate-bounce">👋</span>
+
+          <h1 className="text-5xl font-extrabold leading-[1.12] tracking-tight sm:text-6xl xl:text-8xl">
+            Hi, I'm{" "}
+            <span className="relative inline-block text-[#50f5d2]">
+              {PROFILE.name}
+              <span className="absolute -bottom-1 left-0 -z-0 h-3 w-full rounded-full bg-[#50f5d2]/20" />
+            </span>
           </h1>
 
-          <h2 className="text-2xl sm:text-4xl font-extrabold leading-tight">
-            I build modern, <br />
-            scalable <span className="text-[#10b981]">web applications.</span>
+          <h2 className="mt-7 max-w-3xl text-3xl font-semibold leading-tight text-[#aab8d5] sm:text-4xl lg:text-5xl">
+            I build{" "}
+            <span className="relative inline-block text-[#50f5d2]">
+              digital experiences
+              <span className="absolute -bottom-1 left-0 h-2.5 w-full rounded-full bg-[#50f5d2]/20" />
+            </span>{" "}
+            that make an impact
           </h2>
 
-          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-lg font-normal leading-relaxed">
-            Passionate fullstack developer with expertise in building exceptional digital experiences.
+          <p className="mt-8 max-w-3xl text-lg leading-9 text-[#8e9bb7] sm:text-xl sm:leading-10 lg:text-2xl">
+            {PROFILE.role} &amp; Software Engineering student at
+            Injibara University, passionate about creating elegant
+            solutions with modern technologies.
           </p>
 
-          {/* Connected CTA Button Links */}
-          <div className="flex flex-wrap gap-6 pt-3">
+          {/* Statistics */}
+          <div className="mt-12 flex flex-wrap gap-x-12 gap-y-6 sm:gap-x-16">
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <p className="text-4xl font-extrabold tracking-tight text-[#50f5d2] sm:text-5xl">
+                  {stat.value}
+                </p>
+                <p className="mt-2 text-base font-medium text-[#8e9bb7] sm:text-lg">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Action buttons */}
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="flex items-center gap-2 bg-[#10b981] hover:bg-[#059669] text-[#070d18] font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-[#10b981]/20 group"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#50f5d2] px-6 py-3.5 font-bold text-[#061226] transition hover:-translate-y-1 hover:bg-[#83ffe7]"
             >
-              View Projects 
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              Explore Projects
+              <ArrowUpRight size={19} />
             </a>
+
             <a
               href="#contact"
-              className="flex items-center gap-2 bg-white dark:bg-[#0b1325] border border-slate-300 dark:border-slate-700/80 hover:border-[#10b981] text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white font-semibold px-6 py-3 rounded-xl transition-all"
+              className="inline-flex items-center gap-2 rounded-xl border bg-[#50f5d3] border-white/15 px-6 py-3.5 font-semibold text-white transition hover:border-[#50f5d2]/50 hover:bg-green/5"
             >
-              Contact Me 
               <Mail size={18} />
+              Contact Me
+            </a>
+
+            <a
+              href={PROFILE.resume}
+              className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-5 py-3.5 font-semibold text-white transition hover:border-[#50f5d2]/50 hover:bg-blue/5 bg-green-400"
+            >
+              <Download size={18} />
+              Resume
             </a>
           </div>
+
+          {/* Social links */}
+          <div className="mt-8 flex items-center gap-4 text-[#8e9bb7]">
+            <a
+              href={PROFILE.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub profile"
+              className="transition hover:text-[#50f5d2]"
+            >
+              <GitBranch size={23} />
+            </a>
+
+            {PROFILE.linkedin && (
+              <a
+                href={PROFILE.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn profile"
+                className="transition hover:text-[#50f5d2]"
+              >
+                <User size={23} />
+              </a>
+            )}
+          </div>
         </div>
 
-        {/* 3. Photo Box & Floating Tech Badges with Links */}
-        <div className=" lg:w-[100%] h-[90%] col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
-          
-          <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl bg-white dark:bg-[#0b1325] z-5 w-full max-w-md">
+        {/* Right: Profile portrait and technology badges */}
+        <div className="relative mx-auto flex w-full max-w-[620px] items-center justify-center py-8 sm:py-12 lg:py-16">
+          {/* Outer decorative rings */}
+          <div className="absolute aspect-square w-[108%] rounded-full border-[3px] border-cyan-500/30" />
+          <div className="absolute aspect-square w-[98%] rounded-full border-[3px] border-emerald-300/40" />
+          <div className="absolute aspect-square w-[91%] rounded-full border-[16px] border-[#102c3b]" />
+
+          {/* Portrait */}
+          <div className="relative aspect-square w-[84%] overflow-hidden rounded-full border-[5px] border-[#50f5d2] bg-[#102c3b] shadow-[0_0_55px_rgba(80,245,210,0.12)]">
             <img
-              src={ProfileImage}
-              alt="Abaynew Developer"
-              className="w-full h-[50%]  justify-end"
-              onError={(e) => {
-                e.target.onerror = null
-                e.target.src = 'https://via.placeholder.com/500x380/0b1325/10b981?text=Abaynew'
-              }}
+              src={profileImage}
+              alt={`${PROFILE.name} — Full Stack Developer`}
+              className="h-full w-full object-cover object-center"
             />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#061226]/20 via-transparent to-transparent" />
           </div>
 
-          {/* Smartphone Link */}
-          <a href="#responsive" className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 p-2.5 rounded-xl shadow-xl z-20 hover:border-cyan-400 transition-all">
-            <Smartphone className="text-cyan-400" size={22} />
-          </a>
+          {/* Floating technology icons */}
+          {technologies.map(({ name, Icon, position }) => {
+            const positions = {
+              react: "left-[10%] top-[12%]",
+              node: "right-[8%] top-[18%]",
+              tailwind: "left-[49%] top-[30%]",
+              typescript: "left-[13%] bottom-[17%]",
+              database: "right-[11%] bottom-[13%]",
+            };
 
-          {/* React / Atom Link */}
-          <a href="#skills" className="absolute -top-6 left-12 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 p-3 rounded-2xl shadow-xl z-20 hover:scale-110 transition-transform">
-            <Atom className="text-cyan-400" size={20} />
-          </a>
-
-          {/* Target Icon Link */}
-          <a href="#about" className="absolute top-1/2 -left-6 -translate-y-1/2 bg-white dark:bg-[#0c162c] border-2 border-[#10b981] p-2.5 rounded-2xl shadow-[0_0_15px_rgba(16,185,129,0.4)] z-20 hover:scale-110 transition-transform">
-            <Target className="text-red-500" size={20} />
-          </a>
-
-          {/* Leaf Link */}
-          <a href="#skills" className="absolute -bottom-6 left-20 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 p-3 rounded-2xl shadow-xl z-20 hover:scale-110 transition-transform">
-            <Leaf className="text-emerald-400" size={22} />
-          </a>
-
-          {/* JS Tag Link */}
-          <a href="#skills" className="absolute -top-8 right-6 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 px-4 py-2.5 rounded-2xl shadow-xl z-20 hover:border-yellow-400 transition-all">
-            <span className="text-emerald-400 font-bold text-sm">JS</span>
-          </a>
-
-          {/* TS Tag Link */}
-          <a href="#skills" className="absolute top-12 -right-4 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 px-4 py-3 rounded-2xl shadow-xl z-20 hover:border-blue-400 transition-all">
-            <span className="text-blue-400 font-bold text-base">TS</span>
-          </a>
-
-          {/* Status Dot */}
-          <div className="absolute top-1/2 -right-6 -translate-y-1/2 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 p-3 rounded-2xl shadow-xl z-20">
-            <span className="w-4 h-4 bg-[#10b981] rounded-full block shadow-[0_0_10px_#10b981]"></span>
-          </div>
-
-          {/* PHP Tag Link */}
-          <a href="#skills" className="absolute -bottom-8 right-8 bg-white dark:bg-[#0c162c] border border-slate-200 dark:border-slate-800/80 px-5 py-3 rounded-2xl shadow-xl z-20 hover:border-purple-400 transition-all">
-            <span className="text-purple-400 font-bold text-base">PHP</span>
-          </a>
-
+            return (
+              <div
+                key={name}
+                title={name}
+                className={`absolute ${positions[position]} z-10 flex h-[66px] w-[66px] items-center justify-center rounded-full border border-[#50f5d2]/20 bg-[#0b1b31] text-[#50f5d2] shadow-[0_10px_35px_rgba(0,0,0,0.3)] transition duration-300 hover:scale-110 hover:border-[#50f5d2]/70 sm:h-[78px] sm:w-[78px]`}
+              >
+                <Icon size={34} strokeWidth={1.8} />
+                <span className="sr-only">{name}</span>
+              </div>
+            );
+          })}
         </div>
-      </div>
-    </section>
-  )
-}
+      </section>
 
-export default Home
+      {/* Scroll indicator */}
+      <a
+        href="#more"
+        aria-label="Scroll down"
+        className="absolute bottom-5 left-1/2 hidden -translate-x-1/2 text-[#50f5d2]/70 transition hover:text-[#50f5d2] lg:block"
+      >
+        <ArrowDown size={23} className="animate-bounce" />
+      </a>
+
+      <div id="more" className="h-1" />
+    </main>
+  );
+}
