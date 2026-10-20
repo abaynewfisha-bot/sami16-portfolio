@@ -19,7 +19,7 @@ import {
 const contactDetails = {
   email: "abaynewfisha@gmail.com",
   phone: "+251 9 27 58 23 87",
-  whatsapp: "251900000000",
+  whatsapp: "251927582387",
   location: "Injibara, Amhara, Ethiopia",
   availability: "Open to opportunities",
   mapQuery: "Injibara, Amhara, Ethiopia",
@@ -402,7 +402,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href={`mailto:${contactDetails.email}`}
+                  href={`https://email/${contactDetails.email}`}
                   className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
                   <Mail size={17} />

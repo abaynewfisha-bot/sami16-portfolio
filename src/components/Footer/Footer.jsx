@@ -46,9 +46,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-slate-950 text-gray-300">
+    <footer className="relative overflow-hidden border-t border-white/10  text-gray-300">
       {/* Background glow */}
-      <div className="pointer-events-none absolute -top-24 left-1/2 h-40 w-80 -translate-x-1/2 rounded-full bg-purple-600/20 blur-3xl" />
+      <div className="pointer-events-none absolute -top-24 left-1/2 h-40 w-80 -translate-x-1/2 rounded-full  blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-12 md:px-10">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">

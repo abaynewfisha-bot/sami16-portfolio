@@ -39,7 +39,7 @@ const projects = [
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85",
     technologies: ["React", "JavaScript", "Vite", "Tailwind CSS"],
     github: "https://github.com/abaynewfisha-bot/food-delivery",
-    demo: "",
+    demo: "https://sami-food-d.vercel.app/",
     category: "Frontend",
   },
   {
