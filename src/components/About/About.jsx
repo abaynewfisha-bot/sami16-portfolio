@@ -13,7 +13,6 @@ import {
   Target,
   Lightbulb,
 } from "lucide-react";
-
 import profileImage from "../../assets/Images/sami.png";
 
 const highlights = [

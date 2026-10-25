@@ -432,46 +432,6 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-
-            {/* Map */}
-            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-              <div className="flex items-center gap-3 p-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-50 text-purple-600">
-                  <MapPin size={21} />
-                </div>
-                <div>
-                  <h2 className="font-bold">Find My Location</h2>
-                  <p className="mt-1 text-xs text-slate-500">
-                    {contactDetails.location}
-                  </p>
-                </div>
-              </div>
-
-              <iframe
-                title="Map showing Injibara, Amhara, Ethiopia"
-                src={`https://maps.google.com/maps?q=${encodeURIComponent(
-                  contactDetails.mapQuery
-                )}&output=embed`}
-                width="100%"
-                height="200"
-                style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
-
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                  contactDetails.mapQuery
-                )}`}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-between p-4 text-sm font-semibold text-purple-700 transition hover:bg-purple-50"
-              >
-                Open in Google Maps
-                <ArrowUpRight size={17} />
-              </a>
-            </div>
           </aside>
         </section>
       </div>

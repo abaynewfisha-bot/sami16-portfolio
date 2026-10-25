@@ -6,7 +6,6 @@ const navLinks = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Services", href: "#services" },
-  { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -67,13 +66,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full border-b border-slate-200 bg-white/90 backdrop-blur-md transition-colors duration-300 dark:border-slate-800/50 dark:bg-[#050814]/90">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <nav className="fixed left-0 top-0 z-50 w-full border-b border-slate-200 bg-white/90 backdrop-blur-md transition-colors duration-300 dark:border-slate-800/50 dark:bg-[#050814]/90 ">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-16 py-4">
         {/* Logo */}
         <a
           href="#home"
           onClick={(event) => handleNavClick(event, "#home")}
-          className="flex items-center gap-1 text-2xl font-black tracking-widest text-slate-900 dark:text-white"
+          className="flex items-center gap-8 text-2xl font-black tracking-widest text-slate-900 dark:text-white"
         >
           <span className="text-purple-600 dark:text-purple-500">
             Abaynew
@@ -106,14 +105,6 @@ const Navbar = () => {
           >
             <Download size={16} />
             CV
-          </a>
-
-          <a
-            href="#contact"
-            onClick={(event) => handleNavClick(event, "#contact")}
-            className="rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-purple-500/20 transition-all hover:from-blue-500 hover:to-purple-500"
-          >
-            Hire Me
           </a>
         </div>
 
@@ -148,21 +139,13 @@ const Navbar = () => {
           ))}
 
           <a
-            href="/cv.pdf"
+            href="/CV.pdf"
             download="Abaynew_CV.pdf"
             onClick={() => setIsOpen(false)}
             className="mt-2 flex items-center justify-center gap-2 rounded-lg border border-slate-300 py-3 font-semibold text-slate-700 dark:border-slate-700 dark:text-slate-300"
           >
             <Download size={16} />
             Download CV
-          </a>
-
-          <a
-            href="#contact"
-            onClick={(event) => handleNavClick(event, "#contact")}
-            className="mt-2 rounded-lg bg-blue-600 py-3 text-center font-semibold text-white shadow"
-          >
-            Hire Me
           </a>
         </div>
       )}

@@ -3,7 +3,6 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Services from './components/Services/Services.jsx'
 import Projects from './components/Projects/Projects.jsx'
-import Testimonials from './components/Testimonials/Testimonials.jsx'
 import Skills from './components/Skills/Skills.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Contact from './components/Contact/Contact.jsx'
@@ -22,7 +21,6 @@ function App() {
         <Skills />
         <Projects />
         <Services />
-        <Testimonials />
         <Contact />
         <Footer/>
 

@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: "WhatsApp",
-    href: "https://wa.me/YOUR_PHONE_NUMBER",
+    href: "https://wa.me/+251927582387",
     icon: MessageCircle,
   },
   {
