@@ -28,7 +28,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85",
     technologies: ["React Native", "Expo", "Node.js", "Prisma"],
-    github: "https://github.com/abaynewfisha-bot",
+    github: "",
     demo: "",
     category: "Mobile App",
   },
@@ -51,7 +51,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=85",
     technologies: ["React", "JavaScript", "REST API"],
-    github: "https://github.com/abaynewfisha-bot",
+    github: "",
     demo: "",
     category: "Web Application",
   },
@@ -62,7 +62,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=900&q=85",
     technologies: ["React", "API", "CSS"],
-    github: "https://github.com/abaynewfisha-bot",
+    github: "https://github.com/abaynewfisha-bot/WeathrCondition",
     demo: "",
     category: "Web Application",
   },
