@@ -9,28 +9,7 @@ import { useState } from "react";
 
 
 const projects = [
-  {
-    title: "E-Learning Platform",
-    description:
-      "A full-stack e-learning platform for online courses, learning resources, and student progress management.",
-    image:
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=900&q=85",
-    technologies: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/abaynewfisha-bot",
-    demo: "",
-    category: "Full Stack",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A collaborative task management application to organize projects, track tasks, and improve productivity.",
-    image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=900&q=85",
-    technologies: ["React", "Express", "Socket.io"],
-    github: "https://github.com/abaynewfisha-bot",
-    demo: "",
-    category: "Web Application",
-  },
+
   {
     title: "Food Delivery Website",
     description:
@@ -64,17 +43,7 @@ const projects = [
     demo: "",
     category: "Full Stack",
   },
-  {
-    title: "Developer Portfolio",
-    description:
-      "A personal portfolio website showcasing technical skills, professional background, projects, and contact details.",
-    image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85",
-    technologies: ["React", "Vite", "Tailwind CSS"],
-    github: "https://github.com/abaynewfisha-bot/sami16-portfolio",
-    demo: "",
-    category: "Frontend",
-  },
+ 
   {
     title: "Student Management System",
     description:
@@ -87,17 +56,6 @@ const projects = [
     category: "Web Application",
   },
   {
-    title: "Online Bookstore",
-    description:
-      "A digital bookstore concept with book collections, searchable titles, and an organized shopping experience.",
-    image:
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=85",
-    technologies: ["React", "CSS", "JavaScript"],
-    github: "https://github.com/abaynewfisha-bot",
-    demo: "",
-    category: "Frontend",
-  },
-  {
     title: "Weather Dashboard",
     description:
       "A weather dashboard concept for presenting current conditions and forecasts through a clear interface.",
@@ -107,17 +65,6 @@ const projects = [
     github: "https://github.com/abaynewfisha-bot",
     demo: "",
     category: "Web Application",
-  },
-  {
-    title: "Restaurant Website",
-    description:
-      "A modern restaurant website concept featuring a food menu, restaurant information, and contact details.",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85",
-    technologies: ["React", "Vite", "Tailwind CSS"],
-    github: "https://github.com/abaynewfisha-bot",
-    demo: "",
-    category: "Frontend",
   },
 ];
 
