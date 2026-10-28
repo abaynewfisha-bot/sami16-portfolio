@@ -45,13 +45,13 @@ const projects = [
   },
  
   {
-    title: "Student Management System",
+    title: "Apple Website",
     description:
-      "A student information management interface for organizing student profiles and academic records.",
+      "The Apple Website Project is a modern, responsive website developed using React, Vite, and Tailwind CSS. It showcases Apple-inspired products such as iPhones, MacBooks, AirPods, Apple Watches, and iPads through an attractive user interface.",
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=85",
-    technologies: ["React", "JavaScript", "REST API"],
-    github: "",
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=85",
+    technologies: ["React", "JavaScript", "TailwindCss"],
+    github: "https://github.com/abaynewfisha-bot/Apple_web-page",
     demo: "",
     category: "Web Application",
   },
