@@ -23,7 +23,7 @@ const technologies = [
 ];
 
 const stats = [
-  { value: "10+", label: "Technologies" },
+  { value: "7+", label: "Technologies" },
   { value: "12+", label: "Projects" },
   { value: "80%", label: "Satisfaction" },
 ];
