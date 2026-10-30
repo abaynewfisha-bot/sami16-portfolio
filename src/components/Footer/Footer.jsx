@@ -12,7 +12,7 @@ GitBranch,
 const socialLinks = [
   {
     name: "Telegram",
-    href: "https://t.me/@SamuelFisha",
+    href: "https://t.me/SamuelFisha",
     icon: Send,
   },
   {
@@ -37,7 +37,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME",
+    href: "https://www.linkedin.com/in/abaynew-fisiha-180872424",
     icon: User,
   },
 ];

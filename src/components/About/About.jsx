@@ -95,7 +95,7 @@ function SectionTitle({ title, accent, description }) {
 
 export default function About() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#08172c] text-slate-100">
+    <main className="min-h-screen overflow-hidden  text-slate-100">
       {/* Introduction */}
       <section id="about" className="relative border-b border-white/[0.04] bg-gradient-to-br from-[#0d2133] via-[#091a2e] to-[#07152a]">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-16">
@@ -240,7 +240,7 @@ export default function About() {
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded border border-[#50f5d2]/20 bg-[#50f5d2]/5 px-2 py-1 text-[10px] text-slate-300"
+                      className="rounded border border-[#50f5d2]/20 px-2 py-1 text-[10px] text-slate-300"
                     >
                       {tag}
                     </span>
@@ -352,7 +352,7 @@ export default function About() {
           </p>
 
           <a
-            href="/contact"
+            href="#contact"
             className="mt-7 inline-flex items-center gap-2 rounded-lg bg-[#50f5d2] px-6 py-3 font-bold text-[#08172c] transition hover:-translate-y-0.5 hover:bg-[#8affea]"
           >
             <BookOpen size={17} />
