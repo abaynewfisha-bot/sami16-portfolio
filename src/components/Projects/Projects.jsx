@@ -28,7 +28,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85",
     technologies: ["React Native", "Expo", "Node.js", "Prisma"],
-    github: "",
+    github: "https://github.com/abaynewfisha-bot/ShopEase",
     demo: "",
     category: "Mobile App",
   },
