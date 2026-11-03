@@ -99,7 +99,7 @@ const Navbar = () => {
           <ThemeButton isDarkMode={isDarkMode} onToggle={toggleTheme} />
 
           <a
-            href="/cv.pdf"
+            href="/CV.pdf"
             download="Abaynew_CV.pdf"
             className="flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:border-purple-500 hover:text-purple-600 dark:border-slate-700 dark:text-slate-300 dark:hover:text-purple-400"
           >
