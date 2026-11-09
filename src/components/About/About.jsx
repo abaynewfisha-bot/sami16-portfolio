@@ -253,7 +253,7 @@ export default function About() {
       </section>
 
       {/* Technical skills */}
-      <section className="border-y border-white/[0.05] bg-[#0b1c31] px-5 py-16 sm:px-8 lg:px-12">
+      <section className="border-y border-white/[0.05] px-5 py-16 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             title="Technical"

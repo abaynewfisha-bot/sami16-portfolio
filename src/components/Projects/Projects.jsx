@@ -78,10 +78,10 @@ const filters = [
 
 function ProjectCard({ project }) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-purple-300 hover:shadow-xl hover:shadow-purple-100/60">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0b1c31] transition duration-300 hover:-translate-y-1 hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/30">
       {/* Project preview */}
-      <div className="overflow-hidden border-b border-slate-200  p-3">
-        <div className="relative aspect-[16/8.5] overflow-hidden rounded-xl border border-slate-300 bg-slate-200">
+      <div className="overflow-hidden border-b border-white/10 p-3">
+        <div className="relative aspect-[16/8.5] overflow-hidden rounded-xl border border-white/10 bg-[#10273a]">
           <img
             src={project.image}
             alt={`${project.title} project preview`}
@@ -89,7 +89,7 @@ function ProjectCard({ project }) {
             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
           />
 
-          <span className="absolute left-3 top-3 rounded-full border border-white/60 bg-white/90 px-3 py-1 text-xs font-semibold text-purple-700 shadow-sm backdrop-blur">
+          <span className="absolute left-3 top-3 rounded-full border border-white/10 bg-[#050814]/90 px-3 py-1 text-xs font-semibold text-purple-300 shadow-sm backdrop-blur">
             {project.category}
           </span>
         </div>
@@ -97,11 +97,11 @@ function ProjectCard({ project }) {
 
       {/* Project details */}
       <div className="flex flex-1 flex-col p-5 sm:p-6">
-        <h3 className="text-xl font-semibold tracking-tight text-slate-900 transition group-hover:text-purple-700">
+        <h3 className="text-xl font-semibold tracking-tight text-slate-100 transition group-hover:text-purple-300">
           {project.title}
         </h3>
 
-        <p className="mt-3 min-h-[72px] text-sm leading-6 text-slate-600">
+        <p className="mt-3 min-h-[72px] text-sm leading-6 text-slate-400">
           {project.description}
         </p>
 
@@ -110,7 +110,7 @@ function ProjectCard({ project }) {
           {project.technologies.map((technology) => (
             <span
               key={technology}
-              className="rounded-md border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-xs font-medium text-indigo-700"
+              className="rounded-md border border-indigo-300/20 bg-indigo-400/10 px-3 py-1.5 text-xs font-medium text-indigo-200"
             >
               {technology}
             </span>
@@ -118,12 +118,12 @@ function ProjectCard({ project }) {
         </div>
 
         {/* Action links */}
-        <div className="mt-6 flex items-center justify-between gap-3 border-t border-slate-200 pt-5">
+        <div className="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
           <a
             href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition hover:text-purple-700"
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 transition hover:text-purple-300"
             aria-label={`View ${project.title} source code on GitHub`}
           >
             <GitBranch size={18} />
@@ -162,8 +162,8 @@ export default function Projects() {
         );
 
   return (
-    <main className="min-h-screen  px-4 py-10 text-slate-900 sm:px-6 lg:px-10">
-      <section id="projects" className="mx-auto max-w-[1600px] rounded-3xl border border-slate-200   p-5 shadow-sm sm:p-8 lg:p-10">
+    <main className="min-h-screen px-4 py-10 text-slate-100 sm:px-6 lg:px-10">
+      <section id="projects" className="mx-auto max-w-[1600px] rounded-3xl border border-white/10 p-5 sm:p-8 lg:p-10">
         {/* Heading */}
         <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
           <div>
@@ -177,7 +177,7 @@ export default function Projects() {
               <span className="text-purple-500">Projects</span>
             </h1>
 
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-500 sm:text-base">
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">
               Explore my projects, technologies, and practical
               software development experience.
             </p>
@@ -202,7 +202,7 @@ export default function Projects() {
               className={`rounded-lg border px-4 py-2 text-sm font-medium transition ${
                 activeFilter === filter
                   ? "border-purple-600 bg-purple-600 text-white shadow-md shadow-purple-200"
-                  : "border-slate-200 bg-white text-slate-600 hover:border-purple-300 hover:text-purple-700"
+                  : "border-white/10 bg-[#0b1c31] text-slate-300 hover:border-purple-400/50 hover:text-purple-300"
               }`}
             >
               {filter}
@@ -221,7 +221,7 @@ export default function Projects() {
         </div>
 
         {/* Result count */}
-        <p className="mt-8 text-center text-sm text-slate-500">
+        <p className="mt-8 text-center text-sm text-slate-400">
           Showing{" "}
           <span className="font-semibold text-purple-600">
             {filteredProjects.length}
@@ -232,4 +232,3 @@ export default function Projects() {
     </main>
   );
 }
-

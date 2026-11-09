@@ -9,7 +9,7 @@ import Contact from './components/Contact/Contact.jsx'
 
 function App() {
   return (
-    <div className="bg-slate-50 text-slate-900 dark:bg-[#050814] dark:text-slate-100 min-h-screen relative overflow-hidden transition-colors duration-300">
+    <div id="top" className="bg-slate-50 text-slate-900 dark:bg-[#050814] dark:text-slate-100 min-h-screen relative overflow-hidden transition-colors duration-300">
       {/* Radial Gradient Glow in Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-purple-900/20 via-blue-900/10 to-transparent blur-3xl -z-10 pointer-events-none" />
 

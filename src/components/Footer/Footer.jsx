@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "https://gmail.com/abaynewfisha@gmail.com",
+    href: "mailto:abaynewfisha@gmail.com",
     icon: Mail,
   },
   {

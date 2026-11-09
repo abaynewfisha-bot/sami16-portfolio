@@ -36,7 +36,7 @@ const initialForm = {
 };
 
 const inputClass =
-  "mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-purple-500 focus:bg-white focus:ring-4 focus:ring-purple-100";
+  "mt-2 w-full rounded-xl border border-white/10 bg-[#0b1c31] px-4 py-3 text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-purple-400 focus:bg-[#10273a] focus:ring-4 focus:ring-purple-500/10";
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
@@ -118,14 +118,14 @@ export default function Contact() {
       icon: Mail,
       title: "Email Me",
       value: contactDetails.email,
-      href: `email:${contactDetails.email}`,
+      href: `mailto:${contactDetails.email}`,
       description: "For projects and professional inquiries",
     },
     {
       icon: Phone,
       title: "Call Me",
       value: contactDetails.phone,
-      href: `tel:${contactDetails.phone}`,
+      href: `tel:${contactDetails.whatsapp}`,
       description: "Let's discuss your project",
     },
     {
@@ -140,7 +140,7 @@ export default function Contact() {
   ];
 
   return (
-    <main className="min-h-screen px-4 py-12 text-slate-900 sm:px-6 lg:px-10">
+    <main className="min-h-screen px-4 py-12 text-slate-100 sm:px-6 lg:px-10">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <header className="mb-10 text-center">
@@ -154,7 +154,7 @@ export default function Contact() {
             <span className="text-purple-600">Conversation</span>
           </h1>
 
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
             Have a project idea, a job opportunity, or a question?
             Contact me or your company and let's discuss how we can
             work together.
@@ -176,7 +176,7 @@ export default function Contact() {
                     ? "noreferrer"
                     : undefined
                 }
-                className="group flex gap-4 rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-100/50"
+                className="group flex gap-4 rounded-2xl border border-white/10 bg-[#0b1c31] p-5 transition hover:-translate-y-1 hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-950/30"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-purple-600 transition group-hover:bg-purple-600 group-hover:text-white">
                   <Icon size={22} />
@@ -187,7 +187,7 @@ export default function Contact() {
                   <p className="mt-1 break-words text-sm font-medium text-purple-700">
                     {item.value}
                   </p>
-                  <p className="mt-2 text-xs leading-5 text-slate-500">
+                  <p className="mt-2 text-xs leading-5 text-slate-400">
                     {item.description}
                   </p>
                 </div>
@@ -199,9 +199,9 @@ export default function Contact() {
         {/* Main contact area */}
         <section id="contact" className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr]">
           {/* Contact form */}
-          <div className="rounded-3xl border border-slate-200 p-5 shadow-sm sm:p-8">
+          <div className="rounded-3xl border border-white/10 bg-[#0b1c31] p-5 sm:p-8">
             <div className="mb-7">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-purple-600">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-300">
                 <Send size={23} />
               </div>
 
@@ -209,7 +209,7 @@ export default function Contact() {
                 Send Me a Message
               </h2>
 
-              <p className="mt-2 text-sm leading-6 text-slate-500">
+              <p className="mt-2 text-sm leading-6 text-slate-400">
                 Fill out the form below. Your message will be sent
                 to my configured email inbox.
               </p>
@@ -220,7 +220,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="text-sm font-semibold text-slate-700"
+                    className="text-sm font-semibold text-slate-200"
                   >
                     Your Name *
                   </label>
@@ -240,7 +240,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="text-sm font-semibold text-slate-700"
+                    className="text-sm font-semibold text-slate-200"
                   >
                     Email Address *
                   </label>
@@ -262,7 +262,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="company"
-                  className="text-sm font-semibold text-slate-700"
+                  className="text-sm font-semibold text-slate-200"
                 >
                   Company or Organization
                 </label>
@@ -281,7 +281,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="subject"
-                  className="text-sm font-semibold text-slate-700"
+                  className="text-sm font-semibold text-slate-200"
                 >
                   Subject *
                 </label>
@@ -300,7 +300,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="text-sm font-semibold text-slate-700"
+                  className="text-sm font-semibold text-slate-200"
                 >
                   Your Message *
                 </label>
