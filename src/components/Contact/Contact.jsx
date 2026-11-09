@@ -402,7 +402,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href={`https://gmail.com/${contactDetails.email}`}
+                  href={`mailto:${contactDetails.email}`}
                   className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
                   <Mail size={17} />
