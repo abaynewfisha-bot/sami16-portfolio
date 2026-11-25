@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "mailto:abaynewfisha@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=abaynewfisha@gmail.com",
     icon: Mail,
   },
   {
@@ -76,12 +76,12 @@ export default function Footer() {
                 aria-label={name}
                 title={name}
                 target={
-                  ["Telegram", "WhatsApp", "GitHub", "LinkedIn"].includes(name)
+                  ["Telegram", "WhatsApp", "GitHub", "LinkedIn", "Email"].includes(name)
                     ? "_blank"
                     : undefined
                 }
                 rel={
-                  ["Telegram", "WhatsApp", "GitHub", "LinkedIn"].includes(name)
+                  ["Telegram", "WhatsApp", "GitHub", "LinkedIn", "Email"].includes(name)
                     ? "noopener noreferrer"
                     : undefined
                 }

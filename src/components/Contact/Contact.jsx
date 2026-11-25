@@ -118,7 +118,9 @@ export default function Contact() {
       icon: Mail,
       title: "Email Me",
       value: contactDetails.email,
-      href: `mailto:${contactDetails.email}`,
+      href: `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+        contactDetails.email
+      )}`,
       description: "For projects and professional inquiries",
     },
     {
@@ -170,9 +172,13 @@ export default function Contact() {
               <a
                 key={item.title}
                 href={item.href}
-                target={item.title === "My Location" ? "_blank" : undefined}
+                target={
+                  item.title === "My Location" || item.title === "Email Me"
+                    ? "_blank"
+                    : undefined
+                }
                 rel={
-                  item.title === "My Location"
+                  item.title === "My Location" || item.title === "Email Me"
                     ? "noreferrer"
                     : undefined
                 }
@@ -402,7 +408,11 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href={`mailto:${contactDetails.email}`}
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+                    contactDetails.email
+                  )}`}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
                   <Mail size={17} />
