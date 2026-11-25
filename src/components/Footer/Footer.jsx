@@ -46,7 +46,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/10  text-gray-300">
+    <footer className="relative overflow-hidden border-t border-slate-200 text-slate-600 dark:border-white/10 dark:text-gray-300">
       {/* Background glow */}
       <div className="pointer-events-none absolute -top-24 left-1/2 h-40 w-80 -translate-x-1/2 rounded-full  blur-3xl" />
 
@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <a
               href="/"
-              className="text-2xl font-bold tracking-wide text-white"
+              className="text-2xl font-bold tracking-wide text-slate-900 dark:text-white"
             >
               Abaynew<span className="text-purple-400">.</span>
             </a>

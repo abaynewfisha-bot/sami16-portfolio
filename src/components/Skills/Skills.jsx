@@ -179,9 +179,9 @@ function SkillCard({ group }) {
 
 export default function Skills() {
   return (
-    <main className="min-h-screen overflow-hidden text-slate-100">
+    <main className="min-h-screen overflow-hidden text-slate-900 dark:text-slate-100">
       {/* Hero */}
-      <section  id="skills" className="relative border-b border-white/[0.05] bg-gradient-to-br from-[#0d2133] via-[#091a2e] to-[#08172c] px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
+      <section id="skills" className="relative border-b border-slate-200 bg-gradient-to-br from-white via-slate-50 to-cyan-50 px-5 py-16 sm:px-8 sm:py-20 lg:px-12 dark:border-white/[0.05] dark:from-[#0d2133] dark:via-[#091a2e] dark:to-[#08172c]">
         <div className="pointer-events-none absolute left-1/4 top-0 h-64 w-64 rounded-full bg-cyan-400/[0.06] blur-[100px]" />
         <div className="pointer-events-none absolute right-1/4 top-0 h-64 w-64 rounded-full bg-emerald-400/[0.05] blur-[100px]" />
 

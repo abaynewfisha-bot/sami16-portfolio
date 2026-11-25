@@ -36,7 +36,7 @@ const initialForm = {
 };
 
 const inputClass =
-  "mt-2 w-full rounded-xl border border-white/10 bg-[#0b1c31] px-4 py-3 text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-purple-400 focus:bg-[#10273a] focus:ring-4 focus:ring-purple-500/10";
+  "mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-purple-400 focus:bg-white focus:ring-4 focus:ring-purple-500/10 dark:border-white/10 dark:bg-[#0b1c31] dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:bg-[#10273a]";
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
@@ -205,7 +205,7 @@ export default function Contact() {
         {/* Main contact area */}
         <section id="contact" className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr]">
           {/* Contact form */}
-          <div className="rounded-3xl border border-white/10 bg-[#0b1c31] p-5 sm:p-8">
+          <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 dark:border-white/10 dark:bg-[#0b1c31] dark:shadow-none">
             <div className="mb-7">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-purple-300">
                 <Send size={23} />
@@ -359,7 +359,7 @@ export default function Contact() {
 
           {/* Contact information and map */}
           <aside className="space-y-6">
-            <div className="rounded-3xl text-white sm:p-8">
+            <div className="rounded-3xl text-slate-900 sm:p-8 dark:text-white">
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl text-purple-300">
                   <User size={24} />
@@ -413,7 +413,7 @@ export default function Contact() {
                   )}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 dark:border-white/20 dark:text-white dark:hover:bg-white/10"
                 >
                   <Mail size={17} />
                   Email Me

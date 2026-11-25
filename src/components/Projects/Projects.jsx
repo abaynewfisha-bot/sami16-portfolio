@@ -162,8 +162,8 @@ export default function Projects() {
         );
 
   return (
-    <main className="min-h-screen px-4 py-10 text-slate-100 sm:px-6 lg:px-10">
-      <section id="projects" className="mx-auto max-w-[1600px] rounded-3xl border border-white/10 p-5 sm:p-8 lg:p-10">
+    <main className="min-h-screen px-4 py-10 text-slate-900 sm:px-6 lg:px-10 dark:text-slate-100">
+      <section id="projects" className="mx-auto max-w-[1600px] rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 lg:p-10 dark:border-white/10 dark:bg-transparent dark:shadow-none">
         {/* Heading */}
         <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
           <div>
@@ -202,7 +202,7 @@ export default function Projects() {
               className={`rounded-lg border px-4 py-2 text-sm font-medium transition ${
                 activeFilter === filter
                   ? "border-purple-600 bg-purple-600 text-white shadow-md shadow-purple-200"
-                  : "border-white/10 bg-[#0b1c31] text-slate-300 hover:border-purple-400/50 hover:text-purple-300"
+                  : "border-slate-200 bg-slate-50 text-slate-700 hover:border-purple-400/50 hover:text-purple-600 dark:border-white/10 dark:bg-[#0b1c31] dark:text-slate-300 dark:hover:text-purple-300"
               }`}
             >
               {filter}

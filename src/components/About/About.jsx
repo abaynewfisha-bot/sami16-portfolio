@@ -95,9 +95,9 @@ function SectionTitle({ title, accent, description }) {
 
 export default function About() {
   return (
-    <main className="min-h-screen overflow-hidden  text-slate-100">
+    <main className="min-h-screen overflow-hidden text-slate-900 dark:text-slate-100">
       {/* Introduction */}
-      <section id="about" className="relative border-b border-white/[0.04] bg-gradient-to-br from-[#0d2133] via-[#091a2e] to-[#07152a]">
+      <section id="about" className="relative border-b border-slate-200 bg-gradient-to-br from-white via-slate-50 to-cyan-50 dark:border-white/[0.04] dark:from-[#0d2133] dark:via-[#091a2e] dark:to-[#07152a]">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:px-12 lg:py-16">
           {/* Profile photo */}
           <div className="mx-auto w-full max-w-sm lg:mx-0 lg:ml-5">

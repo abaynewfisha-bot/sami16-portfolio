@@ -30,7 +30,7 @@ const stats = [
 
 export default function Home() {
   return (
-    <main className="relative min-h-[calc(100vh-5rem)] overflow-hidden  text-white">
+    <main className="relative min-h-[calc(100vh-5rem)] overflow-hidden text-slate-900 dark:text-white">
       {/* Background glow */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-cyan-500/[0.06] blur-[120px]" />
       <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-emerald-400/[0.05] blur-[120px]" />
@@ -51,7 +51,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <h2 className="mt-7 max-w-3xl text-3xl font-semibold leading-tight text-[#aab8d5] sm:text-4xl lg:text-5xl">
+          <h2 className="mt-7 max-w-3xl text-3xl font-semibold leading-tight text-slate-600 dark:text-[#aab8d5] sm:text-4xl lg:text-5xl">
             I build{" "}
             <span className="relative inline-block text-[#50f5d2]">
               digital experiences
@@ -60,7 +60,7 @@ export default function Home() {
             that make an impact
           </h2>
 
-          <p className="mt-8 max-w-3xl text-lg leading-9 text-[#8e9bb7] sm:text-xl sm:leading-10 lg:text-2xl">
+          <p className="mt-8 max-w-3xl text-lg leading-9 text-slate-600 dark:text-[#8e9bb7] sm:text-xl sm:leading-10 lg:text-2xl">
             {PROFILE.role} &amp; Software Engineering student at
             Injibara University, passionate about creating elegant
             solutions with modern technologies.
@@ -73,7 +73,7 @@ export default function Home() {
                 <p className="text-4xl font-extrabold tracking-tight text-[#50f5d2] sm:text-5xl">
                   {stat.value}
                 </p>
-                <p className="mt-2 text-base font-medium text-[#8e9bb7] sm:text-lg">
+                <p className="mt-2 text-base font-medium text-slate-500 dark:text-[#8e9bb7] sm:text-lg">
                   {stat.label}
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-xl border bg-[#50f5d3] border-white/15 px-6 py-3.5 font-semibold text-white transition hover:border-[#50f5d2]/50 hover:bg-green/5"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-[#50f5d3] px-6 py-3.5 font-semibold text-slate-900 transition hover:border-[#50f5d2]/50 dark:border-white/15 dark:text-white"
             >
               <Mail size={18} />
               Contact Me
@@ -100,7 +100,7 @@ export default function Home() {
 
             <a
               href={PROFILE.resume}
-              className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-5 py-3.5 font-semibold text-white transition hover:border-[#50f5d2]/50 hover:bg-blue/5 bg-green-400"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-emerald-400 px-5 py-3.5 font-semibold text-slate-900 transition hover:border-[#50f5d2]/50 dark:border-white/15 dark:text-white"
             >
               <Download size={18} />
               Resume
@@ -138,10 +138,10 @@ export default function Home() {
           {/* Outer decorative rings */}
           <div className="absolute aspect-square w-[108%] rounded-full border-[3px] border-cyan-500/30" />
           <div className="absolute aspect-square w-[98%] rounded-full border-[3px] border-emerald-300/40" />
-          <div className="absolute aspect-square w-[91%] rounded-full border-[16px] border-[#102c3b]" />
+          <div className="absolute aspect-square w-[91%] rounded-full border-[16px] border-slate-100 dark:border-[#102c3b]" />
 
           {/* Portrait */}
-          <div className="relative aspect-square w-[84%] overflow-hidden rounded-full border-[5px] border-[#50f5d2] bg-[#102c3b] shadow-[0_0_55px_rgba(80,245,210,0.12)]">
+          <div className="relative aspect-square w-[84%] overflow-hidden rounded-full border-[5px] border-[#50f5d2] bg-slate-100 shadow-[0_0_55px_rgba(80,245,210,0.12)] dark:bg-[#102c3b]">
             <img
               src={profileImage}
               alt={`${PROFILE.name} — Full Stack Developer`}
@@ -164,7 +164,7 @@ export default function Home() {
               <div
                 key={name}
                 title={name}
-                className={`absolute ${positions[position]} z-10 flex h-[66px] w-[66px] items-center justify-center rounded-full border border-[#50f5d2]/20 bg-[#0b1b31] text-[#50f5d2] shadow-[0_10px_35px_rgba(0,0,0,0.3)] transition duration-300 hover:scale-110 hover:border-[#50f5d2]/70 sm:h-[78px] sm:w-[78px]`}
+                className={`absolute ${positions[position]} z-10 flex h-[66px] w-[66px] items-center justify-center rounded-full border border-[#50f5d2]/20 bg-white text-[#50f5d2] shadow-[0_10px_35px_rgba(0,0,0,0.12)] transition duration-300 hover:scale-110 hover:border-[#50f5d2]/70 dark:bg-[#0b1b31] dark:shadow-[0_10px_35px_rgba(0,0,0,0.3)] sm:h-[78px] sm:w-[78px]`}
               >
                 <Icon size={34} strokeWidth={1.8} />
                 <span className="sr-only">{name}</span>
