@@ -26,7 +26,7 @@ const highlights = [
     icon: Code2,
     title: "Full Stack Focus",
     subtitle: "React, Node.js, Python, Databases",
-    detail: "3+ Years Experience",
+    detail: "1+ Years Experience",
   },
   {
     icon: Rocket,
